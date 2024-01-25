@@ -1,0 +1,107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 100vh;
+background-color: rgb(151, 147, 147);
+}
+.container
+{
+    max-width: 400px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px;
+    color: rgb(94, 22, 22);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    background-color: #000000;
+    margin-top: 30px;
+}
+.display-container
+{
+    display: flex;
+    flex-direction: column;
+    margin-block: 50px 10px;
+}
+.history
+{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.display
+{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    height: 76px;
+    width: 80%;
+    text-align: right;
+    outline: none;
+    border: none;
+    pointer-events: none;
+    background: transparent;
+    color: white
+}
+::placeholder
+{
+    color: white;
+}
+.buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+position: relative;
+left: 20px;
+ 
+}
+.buttons button{
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+    font-weight: 300px;
+    background-color: #323131;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.buttons .operator
+{
+    background-color: #FFA500;
+    color: white;
+}
+.operator.top-operator
+{
+    background-color: #707070;
+    color: rgb(255, 255, 255);
+}
+.buttons button:active{
+    transform: scale(0.95);
+}
+.buttons .value-zero{
+    width: calc(56% - 50px);
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+.operator.uguale
+{
+    position: relative;
+   
+}
+
